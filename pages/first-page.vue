@@ -1,13 +1,17 @@
 <template>
-  <div>First Page</div>
+  <div>
+    <FirstPageTitle title="I am a title" />
+    <div>First Page</div>
+  </div>
 </template>
 
 <script>
+import FirstPageTitle from '../components/FirstPageTitle.vue'
+
 export default {
-  name: 'first-page',
-};
+  name: 'FirstPage',
+  components: { FirstPageTitle },
+}
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
