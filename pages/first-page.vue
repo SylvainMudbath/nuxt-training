@@ -1,17 +1,19 @@
 <template>
   <div>
-    <FirstPageTitle title="I am a title" />
+    <FirstPageTitle title-text="BOOM" />
+    <FirstPageTitle noooo="BOOM" />
     <div>First Page</div>
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import FirstPageTitle from '../components/FirstPageTitle.vue'
 
-export default {
+export default Vue.extend({
   name: 'FirstPage',
   components: { FirstPageTitle },
-}
+})
 </script>
 
 <style scoped></style>
