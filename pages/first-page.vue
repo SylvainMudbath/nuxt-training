@@ -1,6 +1,6 @@
 <template>
   <div>
-    <FirstPageTitle title-text="BOOM" />
+    <FirstPageTitle title-text-here="TTTTTT" />
     <FirstPageTitle noooo="BOOM" />
     <div>First Page</div>
   </div>

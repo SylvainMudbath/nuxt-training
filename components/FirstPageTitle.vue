@@ -1,28 +1,25 @@
 <template>
-  <h1 class="title">{{ titleText }}</h1>
+  <h1 class="title">{{ titleTextHere }}</h1>
 </template>
 
 <script lang="ts">
 import Vue, { PropOptions } from 'vue'
-import { ArrayPropsDefinition, PropsDefinition } from 'vue/types/options'
-type FirstPageTitleProps = {
-  titleText: string
-}
 
 export default Vue.extend({
   name: 'FirstPageTitle',
   props: {
-    titleText: {
+    titleTextHere: {
       type: String,
       required: true,
     } as PropOptions<string>,
   },
-  // props: ['title'] as ArrayPropsDefinition<FirstPageTitleProps>,
 })
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+$bg-dark: #232323;
+
 .title {
-  color: red;
+  color: $bg-dark;
 }
 </style>
